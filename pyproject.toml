@@ -1,0 +1,27 @@
+[project]
+name = "convars"
+version = "0.2.0"
+description = ""
+authors = [{ name = "Dan Kelleher", email = "kelleherjdan@gmail.com" }]
+license = { text = "MIT" }
+readme = "README.md"
+classifiers = [
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3",
+]
+
+dependencies = ["python-dotenv", "click"]
+
+[project.optional-dependencies]
+dev = ["black"]
+
+[tool.setuptools]
+packages = ["convars"]
+
+[project.scripts]
+convars = "convars.cli:cli"
+
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
