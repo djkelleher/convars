@@ -2,7 +2,7 @@ Conda (and Mamba) come with a feature for setting environment variables. However
 
 ### Install
 ```bash
-pip instal convars
+pip install convars
 ```
 
 ### Usage
